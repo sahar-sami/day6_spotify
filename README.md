@@ -28,10 +28,15 @@ Used Spotify's Web API and the Spotipy wrapper library to extract songs from the
 This dataset is included as "day6.csv" in this repo.
 
 ## EDA 
-I looked at the distributions of various numerical variables as well as relationships between variables to gain some overall insights of what DAY6's discography is like. These images display some highlights from the EDA. 
+I looked at the distributions of various numerical variables as well as relationships between variables to gain some overall insights of what DAY6's discography is like. The heatmap below shows some of these relationships, like the positive correlation between energy and loudness and the negative correlation between energy and acousticness. 
+![Correlation Heatmap](day6_corr_heatmap.png) More visualizations can be found in the Jupyter Notebook.
+
 
 ## Clustering
 I grouped DAY6's songs into 4 clusters using K-Means Clustering. I used the silhouette method to determine that 4 clusters would give me the best results out of the possibility of 3 to 9 clusters. I used PCA (Principal Component Analysis) to visualize the clusters on a 2D graph and radar plots to display the deterministic features of each cluster. 
+![PCA plot with colors for clusters](day6_pca.png)
+![Radar plots for clusters](day6_cluster.png)
+
 
 ## Next Steps
 * Trying some other clustering algorithms to see if they might produce better results
